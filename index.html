@@ -1365,7 +1365,35 @@ const initIID_ = setInterval(() => {
 		mermaidInit();
 	}
 }, 100);
-</script></script><style>/*
+</script></script><style>.drawio-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.drawio-container img,
+.drawio-container svg,
+.drawio-container pre {
+  width: fit-content;
+  max-width: 100%;
+  height: auto;
+}
+
+.drawio-container button {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+
+.drawio-container:hover button {
+  display: block;
+  opacity: 0.5;
+}
+
+.drawio-container:hover button:hover {
+  opacity: 1;
+}</style><style>/*
 
 Atom One Light by Daniel Gamage
 Original One Light Syntax theme from https://github.com/atom/one-light-syntax
@@ -1893,9 +1921,10 @@ hue-6-2: #c18401
 				.joplin-checklist li:not(.checked)::before {
 					content:"\f0c8";
 				}
-.mermaid { background-color: white; width: 640px; }</style><div id="rendered-md"><h2 id="avant-vendredi-24-juin-matin">Avant vendredi 24 juin matin</h2>
+.mermaid { background-color: white; width: 640px; }
+/* For styling the rendered Markdown */</style><div id="rendered-md"><h2 id="avant-vendredi-24-juin-matin">Avant vendredi 24 juin matin</h2>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-162" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1965" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -1904,19 +1933,19 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:1&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-162&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1965&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:1 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-162" for="md-checkbox-162" class="checkbox-label-checked">Demander &agrave; Patrice et Toto =&gt; <mark><span style="background-color: #fafa00" class="jop-noMdConv">Bubu</span></mark></label></div>
+	" checked="checked"/><label id="cb-label-md-checkbox-1965" for="md-checkbox-1965" class="checkbox-label-checked">Demander &agrave; Patrice et Toto =&gt; <mark><span style="background-color: #fafa00" class="jop-noMdConv">Bubu</span></mark></label></div>
 <ul>
 <li>Patrice vient faire les courses avec nous vendredi 24 juin matin</li>
 </ul>
 </li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-163" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1966" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -1925,16 +1954,16 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:3&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-163&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1966&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:3 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-163" for="md-checkbox-163" class="checkbox-label-checked"> Pr&eacute;ciser, si possible, le nombre de repas des &eacute;quipes</label></div>
+	" checked="checked"/><label id="cb-label-md-checkbox-1966" for="md-checkbox-1966" class="checkbox-label-checked"> Pr&eacute;ciser, si possible, le nombre de repas des &eacute;quipes</label></div>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-164" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1967" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -1943,15 +1972,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:4&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-164&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1967&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:4 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-164" for="md-checkbox-164" class="checkbox-label-checked">BA106 =&gt; <mark><span style="background-color: #d0cdd7" class="jop-noMdConv">Freddy</span></mark> : 4</label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-165" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1967" for="md-checkbox-1967" class="checkbox-label-checked">BA106 =&gt; <mark><span style="background-color: #d0cdd7" class="jop-noMdConv">Freddy</span></mark> : 4</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1968" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -1960,15 +1989,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:5&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-165&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1968&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:5 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-165" for="md-checkbox-165" class="checkbox-label-checked">Grayan et Martillac =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark> : 11+6</label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-166" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1968" for="md-checkbox-1968" class="checkbox-label-checked">Grayan et Martillac =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark> : 11+6</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1969" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -1977,15 +2006,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:6&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-166&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1969&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:6 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-166" for="md-checkbox-166" class="checkbox-label-checked">TBM + Saint-Symphorien =&gt; <mark><span style="background-color: #fafa00" class="jop-noMdConv">Bubu</span></mark> : 9+16</label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-167" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1969" for="md-checkbox-1969" class="checkbox-label-checked">TBM + Saint-Symphorien =&gt; <mark><span style="background-color: #fafa00" class="jop-noMdConv">Bubu</span></mark> : 9+16</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1970" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -1994,21 +2023,21 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:7&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-167&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1970&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:7 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-167" for="md-checkbox-167" class="checkbox-label-checked">V&eacute;t&eacute;rans Saint-Morillon : <mark><span style="background-color: #ffc8c8" class="jop-noMdConv">Manu</span></mark> : 21 + 1 (Juju) + 1 (Nico) + 4 (fam. Tristan) = 27</label></div></li>
+	" checked="checked"/><label id="cb-label-md-checkbox-1970" for="md-checkbox-1970" class="checkbox-label-checked">V&eacute;t&eacute;rans Saint-Morillon : <mark><span style="background-color: #ffc8c8" class="jop-noMdConv">Manu</span></mark> : 21 + 1 (Juju) + 1 (Nico) + 4 (fam. Tristan) = 27</label></div></li>
 <li>Estimation : 4+11+16+9+16+27 =  83 repas</li>
 </ul>
 </li>
 </ul>
 <h2 id="avant-samedi-25-juin-matin">Avant samedi 25 juin matin</h2>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-168" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1971" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2016,16 +2045,16 @@ hue-6-2: #c18401
 				this.removeAttribute(&apos;checked&apos;);
 			}
 
-			postMessage(&apos;checkboxclick:unchecked:11&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-168&quot;);
+			postMessage(&apos;checkboxclick:checked:11&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1971&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
-			console.warn(&apos;Checkbox unchecked:11 error&apos;, error);
+			console.warn(&apos;Checkbox checked:11 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-168" for="md-checkbox-168" class="checkbox-label-unchecked"> Se procurer des plateaux &quot;caf&eacute;t&eacute;ria&quot; : <s>80</s> 90 =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-169" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1971" for="md-checkbox-1971" class="checkbox-label-checked"> Se procurer des plateaux &quot;caf&eacute;t&eacute;ria&quot; : 80 =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1972" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2033,16 +2062,16 @@ hue-6-2: #c18401
 				this.removeAttribute(&apos;checked&apos;);
 			}
 
-			postMessage(&apos;checkboxclick:unchecked:12&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-169&quot;);
+			postMessage(&apos;checkboxclick:checked:12&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1972&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
-			console.warn(&apos;Checkbox unchecked:12 error&apos;, error);
+			console.warn(&apos;Checkbox checked:12 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-169" for="md-checkbox-169" class="checkbox-label-unchecked"> Se procurer des r&eacute;compenses =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-170" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1972" for="md-checkbox-1972" class="checkbox-label-checked"> Se procurer des r&eacute;compenses =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1973" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2051,16 +2080,16 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:13&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-170&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1973&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:13 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-170" for="md-checkbox-170" class="checkbox-label-checked"> R&eacute;aliser / imprimer / d&eacute;couper =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div>
+	" checked="checked"/><label id="cb-label-md-checkbox-1973" for="md-checkbox-1973" class="checkbox-label-checked"> R&eacute;aliser / imprimer / d&eacute;couper =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-171" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1974" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2069,15 +2098,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:14&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-171&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1974&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:14 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-171" for="md-checkbox-171" class="checkbox-label-checked">Carnets repas : 1 ap&eacute;ro + 1 repas + 1 caf&eacute;</label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-172" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1974" for="md-checkbox-1974" class="checkbox-label-checked">Carnets repas : 1 ap&eacute;ro + 1 repas + 1 caf&eacute;</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1975" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2086,15 +2115,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:15&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-172&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1975&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:15 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-172" for="md-checkbox-172" class="checkbox-label-checked">Tarifs consommations (ap&eacute;ro : 1.50 &euro;, bi&egrave;re : 2 &euro;, boisson au verre : 1 &euro;, bouteille d&apos;eau : 0.50 &euro;)</label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-173" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1975" for="md-checkbox-1975" class="checkbox-label-checked">Tarifs consommations (ap&eacute;ro : 1.50 &euro;, bi&egrave;re : 2 &euro;, boisson au verre : 1 &euro;, bouteille d&apos;eau : 0.50 &euro;)</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1976" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2103,15 +2132,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:16&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-173&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1976&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:16 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-173" for="md-checkbox-173" class="checkbox-label-checked">Tarifs ventes de tickets (adultes + jeunes 16-18 ans : 10 &euro;, Enfants 11-15 ans : 5 &euro;, Enfants 0-10 ans : gratuit)</label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-174" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1976" for="md-checkbox-1976" class="checkbox-label-checked">Tarifs ventes de tickets (adultes + jeunes 16-18 ans : 10 &euro;, Enfants 11-15 ans : 5 &euro;, Enfants 0-10 ans : gratuit)</label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1977" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2120,17 +2149,17 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:17&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-174&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1977&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:17 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-174" for="md-checkbox-174" class="checkbox-label-checked">Menu repas (entr&eacute;e : p&acirc;t&eacute;s et salades compos&eacute;es, plat : poulet basquaise et p&acirc;tes, fromages, dessert : caf&eacute; gourmand, vins : rouge et ros&eacute;)</label></div></li>
+	" checked="checked"/><label id="cb-label-md-checkbox-1977" for="md-checkbox-1977" class="checkbox-label-checked">Menu repas (entr&eacute;e : p&acirc;t&eacute;s et salades compos&eacute;es, plat : poulet basquaise et p&acirc;tes, fromages, dessert : caf&eacute; gourmand, vins : rouge et ros&eacute;)</label></div></li>
 </ul>
 </li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-175" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1978" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2139,17 +2168,17 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:18&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-175&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1978&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:18 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-175" for="md-checkbox-175" class="checkbox-label-checked"> R&eacute;cup&eacute;rer des &eacute;cocups : 100 =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
+	" checked="checked"/><label id="cb-label-md-checkbox-1978" for="md-checkbox-1978" class="checkbox-label-checked"> R&eacute;cup&eacute;rer des &eacute;cocups : 100 =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
 <li>Mairie 57 orange, 28 bleues, total : 85</li>
 <li>Compl&eacute;ment au foyer : combien ?</li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-176" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1979" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2158,15 +2187,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:21&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-176&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1979&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:21 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-176" for="md-checkbox-176" class="checkbox-label-checked">R&eacute;cup&eacute;rer la sono de la mairie =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-177" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1979" for="md-checkbox-1979" class="checkbox-label-checked">R&eacute;cup&eacute;rer la sono de la mairie =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1980" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2175,15 +2204,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:22&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-177&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1980&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:22 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-177" for="md-checkbox-177" class="checkbox-label-checked">Demander aux v&eacute;t&eacute;rans d&apos;amener des bouteilles d&apos;eau glac&eacute;es =&gt; <mark><span style="background-color: #ffc8c8" class="jop-noMdConv">Manu</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-178" onclick="
+	" checked="checked"/><label id="cb-label-md-checkbox-1980" for="md-checkbox-1980" class="checkbox-label-checked">Demander aux v&eacute;t&eacute;rans d&apos;amener des bouteilles d&apos;eau glac&eacute;es =&gt; <mark><span style="background-color: #ffc8c8" class="jop-noMdConv">Manu</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1981" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2192,18 +2221,18 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:checked:23&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-178&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1981&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox checked:23 error&apos;, error);
 		}
 		return true;
-	" checked="checked"/><label id="cb-label-md-checkbox-178" for="md-checkbox-178" class="checkbox-label-checked">Rappeler aux v&eacute;t&eacute;rans qu&apos;ils ne viennent pas que pour jouer (installer, servir, etc.) ;) =&gt; <mark><span style="background-color: #d0cdd7" class="jop-noMdConv">Freddy</span></mark></label></div></li>
+	" checked="checked"/><label id="cb-label-md-checkbox-1981" for="md-checkbox-1981" class="checkbox-label-checked">Rappeler aux v&eacute;t&eacute;rans qu&apos;ils ne viennent pas que pour jouer (installer, servir, etc.) ;) =&gt; <mark><span style="background-color: #d0cdd7" class="jop-noMdConv">Freddy</span></mark></label></div></li>
 </ul>
 <h2 id="vendredi-24-juin-&agrave;-9h3010h">Vendredi 24 juin &agrave; 9h30/10h</h2>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-179" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1982" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2211,19 +2240,19 @@ hue-6-2: #c18401
 				this.removeAttribute(&apos;checked&apos;);
 			}
 
-			postMessage(&apos;checkboxclick:unchecked:26&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-179&quot;);
+			postMessage(&apos;checkboxclick:checked:26&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1982&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
-			console.warn(&apos;Checkbox unchecked:26 error&apos;, error);
+			console.warn(&apos;Checkbox checked:26 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-179" for="md-checkbox-179" class="checkbox-label-unchecked">Faire les courses =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark> et <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark>, + Patrice / Toto ?</label></div></li>
+	" checked="checked"/><label id="cb-label-md-checkbox-1982" for="md-checkbox-1982" class="checkbox-label-checked">Faire les courses =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark> et <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark>, + Patrice</label></div></li>
 </ul>
 <h2 id="vendredi-24-juin-&agrave;-19h">Vendredi 24 juin &agrave; 19h</h2>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-180" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1983" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2232,18 +2261,18 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:29&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-180&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1983&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:29 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-180" for="md-checkbox-180" class="checkbox-label-unchecked">Monter la tente =&gt; <mark>Tous (v&eacute;t&eacute;rans disponibles)</mark>, au moins 6</label></div></li>
+	"/><label id="cb-label-md-checkbox-1983" for="md-checkbox-1983" class="checkbox-label-unchecked">Monter la tente =&gt; <mark>Tous (v&eacute;t&eacute;rans disponibles)</mark>, au moins 6</label></div></li>
 </ul>
-<h2 id="samedi-25-juin-matin-et-midi">Samedi 25 juin matin et midi</h2>
+<h2 id="samedi-25-juin-&agrave;-8h">Samedi 25 juin &agrave; 8h</h2>
 <ul>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-181" onclick="
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1984" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2252,15 +2281,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:32&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-181&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1984&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:32 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-181" for="md-checkbox-181" class="checkbox-label-unchecked">Amener caisse et monnaie =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-182" onclick="
+	"/><label id="cb-label-md-checkbox-1984" for="md-checkbox-1984" class="checkbox-label-unchecked">Amener caisse et monnaie =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1985" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2269,15 +2298,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:33&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-182&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1985&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:33 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-182" for="md-checkbox-182" class="checkbox-label-unchecked">Amener poubelles (propres !) =&gt; <mark><span style="background-color: #d0cdd7" class="jop-noMdConv">Freddy</span></mark>, <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-183" onclick="
+	"/><label id="cb-label-md-checkbox-1985" for="md-checkbox-1985" class="checkbox-label-unchecked">Amener plateaux caf&eacute;t&eacute;ria  =&gt; <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1986" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2286,15 +2315,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:34&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-183&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1986&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:34 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-183" for="md-checkbox-183" class="checkbox-label-unchecked"> Amener le frigo / cong&eacute;lateur =&gt; <mark><span style="background-color: #fafa00" class="jop-noMdConv">Bubu</span></mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-184" onclick="
+	"/><label id="cb-label-md-checkbox-1986" for="md-checkbox-1986" class="checkbox-label-unchecked">Amener frigo / cong&eacute;lateur =&gt; <mark><span style="background-color: #fafa00" class="jop-noMdConv">Bubu</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1987" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2303,15 +2332,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:35&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-184&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1987&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:35 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-184" for="md-checkbox-184" class="checkbox-label-unchecked"> Amener rallonges &eacute;lectriques =&gt; <mark>?</mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-185" onclick="
+	"/><label id="cb-label-md-checkbox-1987" for="md-checkbox-1987" class="checkbox-label-unchecked">Amener les impressions (tickets) =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1988" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2320,15 +2349,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:36&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-185&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1988&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:36 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-185" for="md-checkbox-185" class="checkbox-label-unchecked"> R&eacute;cup&eacute;rer les viennoiseries et le pain =&gt; <mark>?</mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-186" onclick="
+	"/><label id="cb-label-md-checkbox-1988" for="md-checkbox-1988" class="checkbox-label-unchecked">Amener les &eacute;cocups =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1989" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2337,15 +2366,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:37&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-186&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1989&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:37 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-186" for="md-checkbox-186" class="checkbox-label-unchecked"> Installer la buvette, le coin cuisine, le coin repas, etc. =&gt; <mark>Tous</mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-187" onclick="
+	"/><label id="cb-label-md-checkbox-1989" for="md-checkbox-1989" class="checkbox-label-unchecked">Amener la sono  =&gt; <mark><span style="background-color: #64ff64" class="jop-noMdConv">Nico</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1990" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2354,15 +2383,15 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:38&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-187&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1990&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:38 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-187" for="md-checkbox-187" class="checkbox-label-unchecked"> Tenir la buvette =&gt; <mark>Tous</mark></label></div></li>
-<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-188" onclick="
+	"/><label id="cb-label-md-checkbox-1990" for="md-checkbox-1990" class="checkbox-label-unchecked">Amener poubelles (propres !) =&gt; <mark><span style="background-color: #d0cdd7" class="jop-noMdConv">Freddy</span></mark>, <mark><span style="background-color: #00faff" class="jop-noMdConv">Fifi</span></mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1991" onclick="
 		try {
 			if (this.checked) {
 				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
@@ -2371,14 +2400,102 @@ hue-6-2: #c18401
 			}
 
 			postMessage(&apos;checkboxclick:unchecked:39&apos;);
-			const label = document.getElementById(&quot;cb-label-md-checkbox-188&quot;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1991&quot;);
 			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
 			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
 		} catch (error) {
 			console.warn(&apos;Checkbox unchecked:39 error&apos;, error);
 		}
 		return true;
-	"/><label id="cb-label-md-checkbox-188" for="md-checkbox-188" class="checkbox-label-unchecked"> Servir les repas =&gt; <mark>Tous</mark></label></div></li>
+	"/><label id="cb-label-md-checkbox-1991" for="md-checkbox-1991" class="checkbox-label-unchecked">Amener des bouteilles d&apos;eau glac&eacute;es  =&gt; <mark>Tous</mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1992" onclick="
+		try {
+			if (this.checked) {
+				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
+			} else {
+				this.removeAttribute(&apos;checked&apos;);
+			}
+
+			postMessage(&apos;checkboxclick:unchecked:40&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1992&quot;);
+			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
+			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
+		} catch (error) {
+			console.warn(&apos;Checkbox unchecked:40 error&apos;, error);
+		}
+		return true;
+	"/><label id="cb-label-md-checkbox-1992" for="md-checkbox-1992" class="checkbox-label-unchecked"> Amener rallonges &eacute;lectriques =&gt; <mark>?</mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1993" onclick="
+		try {
+			if (this.checked) {
+				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
+			} else {
+				this.removeAttribute(&apos;checked&apos;);
+			}
+
+			postMessage(&apos;checkboxclick:unchecked:41&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1993&quot;);
+			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
+			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
+		} catch (error) {
+			console.warn(&apos;Checkbox unchecked:41 error&apos;, error);
+		}
+		return true;
+	"/><label id="cb-label-md-checkbox-1993" for="md-checkbox-1993" class="checkbox-label-unchecked"> R&eacute;cup&eacute;rer les viennoiseries et le pain =&gt; <mark>?</mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1994" onclick="
+		try {
+			if (this.checked) {
+				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
+			} else {
+				this.removeAttribute(&apos;checked&apos;);
+			}
+
+			postMessage(&apos;checkboxclick:unchecked:42&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1994&quot;);
+			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
+			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
+		} catch (error) {
+			console.warn(&apos;Checkbox unchecked:42 error&apos;, error);
+		}
+		return true;
+	"/><label id="cb-label-md-checkbox-1994" for="md-checkbox-1994" class="checkbox-label-unchecked"> Installer la buvette, le coin cuisine, le coin repas, etc. =&gt; <mark>Tous</mark></label></div></li>
+</ul>
+<h2 id="samedi-25-juin-matin-et-midi">Samedi 25 juin matin et midi</h2>
+<ul>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1995" onclick="
+		try {
+			if (this.checked) {
+				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
+			} else {
+				this.removeAttribute(&apos;checked&apos;);
+			}
+
+			postMessage(&apos;checkboxclick:unchecked:45&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1995&quot;);
+			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
+			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
+		} catch (error) {
+			console.warn(&apos;Checkbox unchecked:45 error&apos;, error);
+		}
+		return true;
+	"/><label id="cb-label-md-checkbox-1995" for="md-checkbox-1995" class="checkbox-label-unchecked"> Tenir la buvette =&gt; <mark>Tous</mark></label></div></li>
+<li class="md-checkbox joplin-checkbox"><div class="checkbox-wrapper"><input type="checkbox" id="md-checkbox-1996" onclick="
+		try {
+			if (this.checked) {
+				this.setAttribute(&apos;checked&apos;, &apos;checked&apos;);
+			} else {
+				this.removeAttribute(&apos;checked&apos;);
+			}
+
+			postMessage(&apos;checkboxclick:unchecked:46&apos;);
+			const label = document.getElementById(&quot;cb-label-md-checkbox-1996&quot;);
+			label.classList.remove(this.checked ? &apos;checkbox-label-unchecked&apos; : &apos;checkbox-label-checked&apos;);
+			label.classList.add(this.checked ? &apos;checkbox-label-checked&apos; : &apos;checkbox-label-unchecked&apos;);
+		} catch (error) {
+			console.warn(&apos;Checkbox unchecked:46 error&apos;, error);
+		}
+		return true;
+	"/><label id="cb-label-md-checkbox-1996" for="md-checkbox-1996" class="checkbox-label-unchecked"> Servir les repas =&gt; <mark>Tous</mark></label></div></li>
 </ul>
 </div></div>
 					</body>
